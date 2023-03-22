@@ -1,0 +1,360 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+b {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+}
+
+.block p a {
+    text-decoration: none;
+    color:rgb(85, 85, 85);
+}
+/* --Header-- */
+header {
+    background-color: rgb(255, 220, 225);
+    color: black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header a {
+    color: black;
+}
+
+header a:hover {
+    color: rgb(170, 36, 56);
+}
+
+header h1 {
+    margin: auto;
+    margin-top: 62px;
+    margin-bottom: 10px;
+    font-size: 48px;
+}
+
+header p {
+    margin: auto;
+    margin-bottom: 32px;
+}
+
+.solid {
+    width: 700px;
+    margin-bottom: 32px;
+}
+
+#topnav {
+    margin: auto;
+    margin-bottom: 62px;
+}
+
+#topnav > a {
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+#topnav p:last-child {
+    margin-right: 0;
+}
+
+/*--icons--*/
+.social {
+    font-size: 32px;
+    color: lightblue;
+}
+
+.social a {
+    color: rgb(170, 36, 56);
+}
+
+.social a:hover {
+    color: lightsteelblue;
+}
+
+#footer {
+    padding-top: 1em;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background-color: rgb(255, 220, 225);
+    color: black;
+    margin: auto;
+    display: flex;
+    max-height: 250px;
+    padding:auto;
+    align-items: right;
+    justify-content: space-around;
+}
+
+section {
+    line-height: 0;
+    padding-top: 1em;
+}
+
+
+/* Wrapper */
+
+#maincontent-wrapper {
+    /* width: 100%; */
+    padding: 137px 73px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#maincontent {
+    background-color: white;
+    max-height: 574px;
+    width: 1774px;
+    display: flex;
+    align-content: space-between;
+    /* overflow: hidden;
+    overflow-x: auto; */
+    overflow-x: auto;
+    overscroll-behavior: contain;
+}
+.content .title {
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.content .counter {
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.content .small-title {
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-top: 20px;
+}
+.content {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#maincontent img {
+    width: 400px;
+    height: 300px;
+    margin-right: 75px;
+}
+#maincontent > .case-preview-wrapper {
+    height: 300px;
+    margin-right: 75px;
+    user-select: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+#maincontent > .case-preview-wrapper > span {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    overflow: hidden;
+    transition: width 220ms;
+}
+#maincontent > .case-preview-wrapper input.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+#maincontent > .case-preview-wrapper input.checkbox:checked + span {
+    width: 1050px;
+}
+.content {
+    width: 670px;
+    flex-shrink: 0;
+}
+
+.block {
+    display: block;
+}
+
+.block p{
+    text-indent: 2em;
+    width: 550px;
+}
+
+
+@media only screen and (max-width: 848px) {
+    body {
+        font-family: "Inter", sans-serif;
+        font-size: 12px;
+    }
+
+    header {
+        background-color: rgb(255, 220, 225);
+        color: black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+
+    header h1 {
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-left: 48px;
+        font-size: 24px;
+    }
+
+    header p {
+        margin: auto;
+        margin-bottom: 32px;
+        margin-left: 48px;
+    }
+
+    .solid {
+        color:black;
+        width: 318px;
+        margin-bottom: 30px;
+        margin-left: 48px;
+    }
+
+    #topnav {
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 48px;
+    }
+
+    #topnav > a {
+        margin-bottom: 20px;
+        text-decoration: none !important;
+    }
+
+    #maincontent-wrapper {
+        margin: 0;
+        padding: 50px 48px;
+    }
+
+    #maincontent {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        max-height: unset;
+        width: 300px;
+    }
+
+    .content .title {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+    .content .counter {
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .content {
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    #maincontent img {
+        width: 480px;
+        height: 330px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #maincontent > .case-preview-wrapper {
+        height: unset;
+        width: 600px;
+        margin-right: 0;
+        margin-bottom: 75px;
+        user-select: none;
+        cursor: pointer;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+    #maincontent > .case-preview-wrapper > span {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+        width: 600px;
+        overflow: hidden;
+        transition: width 220ms;
+        margin-right: 0;
+    }
+    #maincontent > .case-preview-wrapper input.checkbox {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        position: absolute;
+    }
+    #maincontent > .case-preview-wrapper input.checkbox:checked + span {
+        height: 600px;
+        width: 400px;
+    }
+    .content {
+        width: 600px;
+        height: 500px;
+        flex-shrink: 0;
+    }
+
+    .content p {
+        width: 300px;
+    }
+
+    footer {
+        background-color: pink;
+        color: black;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        max-height: 286px;
+        padding: 75px 50px;
+        padding-right: 118px;
+        align-items: left;
+    }
+
+}

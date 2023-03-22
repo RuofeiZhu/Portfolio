@@ -1,0 +1,194 @@
+header {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+aside {
+    background: rgb(255, 220, 225);
+    border-radius: 2em 0 0 2em;
+}
+
+
+/*--nav--*/
+
+aside nav {
+    display: flex;
+}
+
+aside nav li {
+    list-style-type: none;
+    line-height: 3em;
+    text-align: right;
+}
+
+aside nav li a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: black;
+}
+
+aside nav li a:hover {
+    color: lightblue;
+}
+
+
+/*--header--*/
+
+h1 {
+    font-style: 0, 100;
+    font-size: 25px;
+    font-weight: 300;
+    background-color: rgb(255, 220, 225);
+    width: fit-content;
+    padding: 1.5em;
+    border-radius: .5em;
+    margin-left: 1em;
+    animation: wiggle 2s linear;
+}
+
+
+/* Keyframes */
+
+@keyframes wiggle {
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+    15% {
+        transform: rotateZ(-15deg);
+    }
+    20% {
+        transform: rotateZ(10deg);
+    }
+    25% {
+        transform: rotateZ(-10deg);
+    }
+    30% {
+        transform: rotateZ(6deg);
+    }
+    35% {
+        transform: rotateZ(-4deg);
+    }
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+
+/* 
+.nav div {
+    height: 8px;
+    background-color: pink;
+    margin: 8px 0;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.nav {
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+}
+
+.one {
+    width: 40px;
+}
+
+.two {
+    width: 30px;
+}
+
+.three {
+    width: 50px;
+}
+
+.nav:hover div {
+    width: 50px;
+} */
+
+
+/*--submenu--*/
+
+.content {
+    display: none;
+}
+
+
+/*--text--*/
+
+article {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+article p {
+    text-align: center;
+}
+
+
+/*--icons--*/
+
+.social {
+    font-size: 32px;
+    color: lightblue;
+}
+
+.social a {
+    color: rgb(255, 220, 225);
+}
+
+.social a:hover {
+    color: lightsteelblue;
+}
+
+.footer {
+    line-height: 0em;
+    text-decoration: none;
+    padding-left: 2em;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .wrapper {
+        display: flex;
+        gap: 3em;
+        min-height: 100vh;
+    }
+    #content {
+        flex: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    aside {
+        flex: 1;
+    }
+    article {
+        position: relative;
+        left: 80%;
+        width: 520px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+}
